@@ -17,12 +17,23 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_admin',
     ];
     protected $hidden = [
         'password',
         'remember_token',
     ];
+// Many-to-Many: A user can be interested in many books.
+    public function interestedBooks()
+    {
+        return $this->belongsToMany(Book::class, 'interest')->withTimestamps();
+    }
 
+    // A user (Admin) can have many created books.
+    public function books()
+    {
+        return $this->hasMany(Book::class);
+    }
     protected function casts(): array
     {
         return [
