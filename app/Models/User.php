@@ -34,6 +34,11 @@ class User extends Authenticatable
     {
         return $this->hasMany(Book::class);
     }
+    // has many create comments
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
     protected function casts(): array
     {
         return [
