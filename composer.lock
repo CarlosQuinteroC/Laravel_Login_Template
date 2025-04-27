@@ -4,8 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85c1d2065f70e38b0d6bf66559fb13c5",
+    "content-hash": "bb042f0e648461770c33a0a6f9de2d6f",
     "packages": [
+        {
+            "name": "aphisitworachorch/kacher",
+            "version": "v1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aphisitworachorch/kacher.git",
+                "reference": "7f1389841cfa0f82b452d3b3bae9e29ba2531d95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aphisitworachorch/kacher/zipball/7f1389841cfa0f82b452d3b3bae9e29ba2531d95",
+                "reference": "7f1389841cfa0f82b452d3b3bae9e29ba2531d95",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^10.37|^11.0|^12.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0|^9.0|^10.0"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Aphisitworachorch\\Kacher\\KacherServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aphisitworachorch\\Kacher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arsanandha Aphisitworachorch",
+                    "email": "arsanandha.ap@gmail.com"
+                }
+            ],
+            "description": "Kacher is Laravel DB to DBML (dbdiagram.io/dbdocs.io)",
+            "keywords": [
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/aphisitworachorch/kacher/issues",
+                "source": "https://github.com/aphisitworachorch/kacher/tree/v1.3"
+            },
+            "time": "2025-02-25T02:35:43+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",

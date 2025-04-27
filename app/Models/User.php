@@ -39,6 +39,17 @@ class User extends Authenticatable
     {
         return $this->hasMany(Comment::class);
     }
+    // has many create ratings
+    public function ratings()
+    {
+        return $this->hasMany(Rating::class);
+    }
+
+// Many-to-Many: A user can be interested in many jobs.
+    public function interestedJobs()
+    {
+        return $this->belongsToMany(Job::class, 'interests')->withTimestamps();
+    }
     protected function casts(): array
     {
         return [
