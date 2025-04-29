@@ -50,6 +50,11 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Job::class, 'interests')->withTimestamps();
     }
+
+    public function isAdmin()
+    {
+        return $this->is_admin; // ← Return the value of the is_admin field
+    }
     protected function casts(): array
     {
         return [
